@@ -156,10 +156,25 @@ http://198.204.228.26/live/cqys.m3u8
 #EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (720P专线)
 http://173.208.212.130:8181/720p/cq_yingshi.m3u8
 
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (720P高清专线)
+http://173.208.212.130:8181/720p/cqtv4.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (高清CDN专线)
+http://107.150.60.122/live/cqtv4.m3u8
+
 #EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (超清1080P线)
 http://204.12.221.218:8181/3m1080p/cqds.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (720P高清专线)
+http://173.208.212.130:8181/720p/cqtv4.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (高清CDN专线)
+http://107.150.60.122/live/cqtv4.m3u8
+
 #EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (高清CDN专线1)
 http://74.91.26.218:82/live/cqdshd.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (720P高清专线)
+http://173.208.212.130:8181/720p/cqtv4.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (高清CDN专线)
+http://107.150.60.122/live/cqtv4.m3u8
+
 #EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (多线备用源)
 http://74.91.26.218:82/live/cqdushi.m3u8
 
