@@ -2,6 +2,7 @@ package com.falcon.tvlive;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -19,7 +20,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.media3.common.MediaItem;
 import androidx.media3.common.PlaybackException;
 import androidx.media3.common.Player;
+import androidx.media3.datasource.DefaultDataSource;
+import androidx.media3.datasource.DefaultHttpDataSource;
 import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.exoplayer.hls.HlsMediaSource;
+import androidx.media3.exoplayer.source.DefaultMediaSourceFactory;
+import androidx.media3.exoplayer.source.MediaSource;
 import androidx.media3.ui.AspectRatioFrameLayout;
 import androidx.media3.ui.PlayerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -33,13 +39,17 @@ import com.falcon.tvlive.model.Channel;
 import com.falcon.tvlive.model.Source;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String PREF_NAME = "falcon_tv_prefs";
     private static final String KEY_LAST_CHANNEL_NUM = "last_channel_num";
     private static final String KEY_LAST_SOURCE_IDX = "last_source_idx";
+
+    private static final String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
     // Views
     private FrameLayout rootLayout;
@@ -62,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
     private ChannelAdapter channelAdapter;
     private SubscriptionManager subscriptionManager;
     private ExoPlayer player;
+    private DefaultDataSource.Factory dataSourceFactory;
     private GestureDetector gestureDetector;
 
     // Data State
@@ -154,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onDoubleTap(MotionEvent e) {
-                // 双击屏幕切换全屏拉伸 / 原始比例
+                // 双击屏幕切换画面比例
                 if (playerView != null) {
                     if (currentResizeMode == AspectRatioFrameLayout.RESIZE_MODE_FIT) {
                         currentResizeMode = AspectRatioFrameLayout.RESIZE_MODE_FILL;
@@ -176,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
                 float diffX = e2.getX() - e1.getX();
 
                 if (Math.abs(diffY) > Math.abs(diffX)) {
-                    // 上下滑动手势换台
+                    // 上下滑动换台
                     if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                         if (diffY < 0) {
                             switchToNextChannel();
@@ -200,20 +211,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // 监听屏幕点击和滑动事件
         playerView.setOnTouchListener((v, event) -> {
             gestureDetector.onTouchEvent(event);
             return true;
         });
-
-        // 点击侧边栏外部区域自动关闭
-        drawerLayout.setOnClickListener(v -> {
-            // consume clicks
-        });
     }
 
     private void initPlayer() {
-        player = new ExoPlayer.Builder(this).build();
+        // 1. 配置支持跨协议重定向、防盗链 UA 和容错超时的 HttpDataSource
+        Map<String, String> defaultHeaders = new HashMap<>();
+        defaultHeaders.put("User-Agent", USER_AGENT);
+        defaultHeaders.put("Accept", "*/*");
+
+        DefaultHttpDataSource.Factory httpDataSourceFactory = new DefaultHttpDataSource.Factory()
+                .setUserAgent(USER_AGENT)
+                .setConnectTimeoutMs(8000)
+                .setReadTimeoutMs(10000)
+                .setAllowCrossProtocolRedirects(true)
+                .setDefaultRequestProperties(defaultHeaders);
+
+        dataSourceFactory = new DefaultDataSource.Factory(this, httpDataSourceFactory);
+
+        // 2. 构建 ExoPlayer
+        DefaultMediaSourceFactory mediaSourceFactory = new DefaultMediaSourceFactory(dataSourceFactory);
+        player = new ExoPlayer.Builder(this)
+                .setMediaSourceFactory(mediaSourceFactory)
+                .build();
+
         playerView.setPlayer(player);
 
         player.addListener(new Player.Listener() {
@@ -231,13 +255,13 @@ public class MainActivity extends AppCompatActivity {
             public void onPlayerError(PlaybackException error) {
                 loadingLayout.setVisibility(View.VISIBLE);
                 tvLoadingMsg.setText(R.string.channel_error);
-                // 自动尝试下一个备用源
+                // 播放失败自动切到下一个备用源
                 handler.postDelayed(() -> {
                     if (currentChannel != null && currentChannel.getSources().size() > 1) {
                         currentChannel.nextSource();
                         playCurrentSource();
                     }
-                }, 1500);
+                }, 1200);
             }
         });
     }
@@ -329,8 +353,15 @@ public class MainActivity extends AppCompatActivity {
         tvLoadingMsg.setText(R.string.channel_loading);
 
         player.stop();
-        MediaItem mediaItem = MediaItem.fromUri(src.getUrl());
-        player.setMediaItem(mediaItem);
+
+        // 支持 HLS 和普通媒体流
+        Uri uri = Uri.parse(src.getUrl());
+        MediaItem mediaItem = MediaItem.fromUri(uri);
+        MediaSource mediaSource = new HlsMediaSource.Factory(dataSourceFactory)
+                .setAllowChunklessPreparation(true)
+                .createMediaSource(mediaItem);
+
+        player.setMediaSource(mediaSource);
         player.prepare();
         player.play();
     }
