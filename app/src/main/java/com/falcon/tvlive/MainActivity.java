@@ -5,8 +5,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.GestureDetector;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +20,7 @@ import androidx.media3.common.MediaItem;
 import androidx.media3.common.PlaybackException;
 import androidx.media3.common.Player;
 import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.ui.AspectRatioFrameLayout;
 import androidx.media3.ui.PlayerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_LAST_SOURCE_IDX = "last_source_idx";
 
     // Views
+    private FrameLayout rootLayout;
     private PlayerView playerView;
     private LinearLayout loadingLayout;
     private TextView tvLoadingMsg;
@@ -56,12 +62,14 @@ public class MainActivity extends AppCompatActivity {
     private ChannelAdapter channelAdapter;
     private SubscriptionManager subscriptionManager;
     private ExoPlayer player;
+    private GestureDetector gestureDetector;
 
     // Data State
     private List<Category> allCategories = new ArrayList<>();
     private List<Channel> allChannelsFlat = new ArrayList<>();
     private Channel currentChannel;
     private int currentFlatIndex = 0;
+    private int currentResizeMode = AspectRatioFrameLayout.RESIZE_MODE_FIT;
 
     // UI Handlers & Timers
     private final Handler handler = new Handler(Looper.getMainLooper());
@@ -87,15 +95,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_main);
 
         initViews();
+        initTouchAndGestures();
         initPlayer();
         initData();
     }
 
     private void initViews() {
+        rootLayout = findViewById(R.id.rootLayout);
         playerView = findViewById(R.id.playerView);
         loadingLayout = findViewById(R.id.loadingLayout);
         tvLoadingMsg = findViewById(R.id.tvLoadingMsg);
@@ -127,6 +137,81 @@ public class MainActivity extends AppCompatActivity {
         rvChannels.setAdapter(channelAdapter);
     }
 
+    private void initTouchAndGestures() {
+        gestureDetector = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener() {
+            private static final int SWIPE_THRESHOLD = 60;
+            private static final int SWIPE_VELOCITY_THRESHOLD = 80;
+
+            @Override
+            public boolean onSingleTapConfirmed(MotionEvent e) {
+                if (isDrawerOpen) {
+                    closeDrawer();
+                } else {
+                    openDrawer();
+                }
+                return true;
+            }
+
+            @Override
+            public boolean onDoubleTap(MotionEvent e) {
+                // 双击屏幕切换全屏拉伸 / 原始比例
+                if (playerView != null) {
+                    if (currentResizeMode == AspectRatioFrameLayout.RESIZE_MODE_FIT) {
+                        currentResizeMode = AspectRatioFrameLayout.RESIZE_MODE_FILL;
+                        Toast.makeText(MainActivity.this, "画面比例: 铺满全屏", Toast.LENGTH_SHORT).show();
+                    } else {
+                        currentResizeMode = AspectRatioFrameLayout.RESIZE_MODE_FIT;
+                        Toast.makeText(MainActivity.this, "画面比例: 原始比例", Toast.LENGTH_SHORT).show();
+                    }
+                    playerView.setResizeMode(currentResizeMode);
+                }
+                return true;
+            }
+
+            @Override
+            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+                if (isDrawerOpen || e1 == null || e2 == null) return false;
+
+                float diffY = e2.getY() - e1.getY();
+                float diffX = e2.getX() - e1.getX();
+
+                if (Math.abs(diffY) > Math.abs(diffX)) {
+                    // 上下滑动手势换台
+                    if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
+                        if (diffY < 0) {
+                            switchToNextChannel();
+                        } else {
+                            switchToPrevChannel();
+                        }
+                        return true;
+                    }
+                } else {
+                    // 左右滑动切源
+                    if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
+                        if (diffX < 0) {
+                            switchToNextSource();
+                        } else {
+                            switchToPrevSource();
+                        }
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+
+        // 监听屏幕点击和滑动事件
+        playerView.setOnTouchListener((v, event) -> {
+            gestureDetector.onTouchEvent(event);
+            return true;
+        });
+
+        // 点击侧边栏外部区域自动关闭
+        drawerLayout.setOnClickListener(v -> {
+            // consume clicks
+        });
+    }
+
     private void initPlayer() {
         player = new ExoPlayer.Builder(this).build();
         playerView.setPlayer(player);
@@ -146,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPlayerError(PlaybackException error) {
                 loadingLayout.setVisibility(View.VISIBLE);
                 tvLoadingMsg.setText(R.string.channel_error);
-                // 播放失败自动尝试下一个备用源
+                // 自动尝试下一个备用源
                 handler.postDelayed(() -> {
                     if (currentChannel != null && currentChannel.getSources().size() > 1) {
                         currentChannel.nextSource();
