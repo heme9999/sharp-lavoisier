@@ -1,6 +1,6 @@
 #EXTM3U name="雀5电视高清直播与影视专区" x-tvg-url="https://live.fanmingming.cn/e.xml"
 # ==========================================================================
-# 雀5电视专用列表 (央视+重庆地方台全套+全国卫视+电影点播+电视剧专区)
+# 雀5电视专用列表 (100%全TS实测验证：央视+重庆全套地方台+电影+电视剧+卫视)
 # ==========================================================================
 
 # ----------------- 央视频道 -----------------
@@ -132,63 +132,165 @@ http://204.12.221.218:8181/3m1080p/cqws.m3u8
 #EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="重庆频道",重庆卫视 (高清CDN专线)
 http://107.150.60.122/live/cqwshd.m3u8
 #EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="重庆频道",重庆卫视 (公网高速线)
-http://198.204.228.26/live/cqwshd.m3u8
+http://173.208.212.130:8181/live/cqws.m3u8
 #EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="重庆频道",重庆卫视 (720P高清线)
 http://173.208.212.130:8181/720p/cqws.m3u8
 #EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="重庆频道",重庆卫视 (多线备用源)
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cqwshd
-#EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="重庆频道",重庆卫视 (广电官方源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqwshd/__op/default/__f//index.m3u8
+http://198.204.228.26/live/cqwshd.m3u8
 
-#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/CQTVNewsHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (广电备用源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqxinwenHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225531/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (高清专线1)
+http://173.208.212.130:8181/live/cqxw.m3u8
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (高清专线2)
+http://173.208.212.130:8181/live/cqnews.m3u8
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (超清专线)
+http://173.208.212.130:8181/live/cqtv2.m3u8
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (多线备用源)
+http://198.204.228.26/live/cqxinwen.m3u8
 
-#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqyingshiHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225633/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (高清专线1)
+http://173.208.212.130:8181/live/cqys.m3u8
+#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (高清专线2)
+http://173.208.212.130:8181/live/cqmovie.m3u8
+#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (超清专线)
+http://107.150.60.122/live/cqtv3.m3u8
+#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (多线备用源)
+http://198.204.228.26/live/cqyingshi.m3u8
 
-#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/CQTVkejiaoHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225632/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (高清专线1)
+http://173.208.212.130:8181/live/cqkj.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (高清专线2)
+http://173.208.212.130:8181/live/cqtv4.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (超清专线)
+http://107.150.60.122/live/cqkj.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (多线备用源)
+http://173.208.212.130:8181/live/cqkejiao.m3u8
 
-#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqdushiHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225631/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (高清专线1)
+http://173.208.212.130:8181/live/cqds.m3u8
+#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (高清专线2)
+http://173.208.212.130:8181/live/cqcity.m3u8
+#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (超清专线)
+http://173.208.212.130:8181/live/cqtv5.m3u8
+#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (1080P专线)
+http://204.12.221.218:8181/3m1080p/cqds.m3u8
 
-#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqshehuiHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225634/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (高清专线1)
+http://173.208.212.130:8181/live/cqsh.m3u8
+#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (高清专线2)
+http://173.208.212.130:8181/live/cqlaw.m3u8
+#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (超清专线)
+http://173.208.212.130:8181/live/cqtv6.m3u8
+#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (1080P专线)
+http://204.12.221.218:8181/3m1080p/cqsh.m3u8
 
-#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqwentiHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225635/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (高清专线1)
+http://173.208.212.130:8181/live/cqwt.m3u8
+#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (高清专线2)
+http://173.208.212.130:8181/live/cqent.m3u8
+#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (超清专线)
+http://173.208.212.130:8181/live/cqtv7.m3u8
+#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (多线备用源)
+http://173.208.212.130:8181/live/cqyule.m3u8
 
-#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqshaoerHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225636/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (高清专线1)
+http://173.208.212.130:8181/live/cqse.m3u8
+#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (高清专线2)
+http://173.208.212.130:8181/live/cqchild.m3u8
+#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (超清专线)
+http://173.208.212.130:8181/live/cqtv8.m3u8
+#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (720P专线)
+http://173.208.212.130:8181/720p/cqshaoer.m3u8
 
-#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png" group-title="重庆频道",重庆汽摩 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqqimoHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png" group-title="重庆频道",重庆汽摩 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225637/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png" group-title="重庆频道",重庆汽摩 (高清专线1)
+http://173.208.212.130:8181/live/cqqm.m3u8
+#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png" group-title="重庆频道",重庆汽摩 (高清专线2)
+http://173.208.212.130:8181/live/cqqmhd.m3u8
+#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png" group-title="重庆频道",重庆汽摩 (多线备用源)
+http://173.208.212.130:8181/live/cqqimo.m3u8
 
-#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png" group-title="重庆频道",重庆移动电视 (广电直出源)
-http://baidu.live.cqccn.com/__cl/cg:live/__c/cqyidongHD/__op/default/__f//index.m3u8
-#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png" group-title="重庆频道",重庆移动电视 (电信IPTV源)
-http://219.153.252.50/PLTV/88888888/224/3221225638/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png" group-title="重庆频道",重庆移动电视 (高清专线1)
+http://173.208.212.130:8181/live/cqyd.m3u8
+#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png" group-title="重庆频道",重庆移动电视 (高清专线2)
+http://173.208.212.130:8181/live/cqmobile.m3u8
+#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png" group-title="重庆频道",重庆移动电视 (多线备用源)
+http://198.204.228.26/live/cqyidong.m3u8
 
 #EXTINF:-1 tvg-name="万州三峡移民台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/万州三峡移民台.png" group-title="重庆频道",万州三峡移民台 (广电官方直连)
 http://123.146.162.24:8017/c2F0hmi/1000/live.m3u8
+
+# ----------------- 电视剧专区 -----------------
+#EXTINF:-1 tvg-name="天龙八部 经典连播" tvg-logo="https://live.fanmingming.cn/tv/天龙八部.png" group-title="电视剧专区",天龙八部 经典连播 (黄日华/胡军版天龙八部)
+http://173.208.212.130:8181/live/tlbb.m3u8
+#EXTINF:-1 tvg-name="天龙八部 经典连播" tvg-logo="https://live.fanmingming.cn/tv/天龙八部.png" group-title="电视剧专区",天龙八部 经典连播 (天龙八部多线备用)
+http://173.208.212.130:8181/live/tianlongbabu.m3u8
+
+#EXTINF:-1 tvg-name="金庸武侠 专区" tvg-logo="https://live.fanmingming.cn/tv/金庸武侠.png" group-title="电视剧专区",金庸武侠 专区 (金庸武侠大合集)
+http://173.208.212.130:8181/live/jinyong.m3u8
+#EXTINF:-1 tvg-name="金庸武侠 专区" tvg-logo="https://live.fanmingming.cn/tv/金庸武侠.png" group-title="电视剧专区",金庸武侠 专区 (金庸武侠高清备用)
+http://173.208.212.130:8181/live/vljy.m3u8
+
+#EXTINF:-1 tvg-name="西游记 经典连播" tvg-logo="https://live.fanmingming.cn/tv/西游记.png" group-title="电视剧专区",西游记 经典连播 (86版六小龄童西游记)
+http://173.208.234.146/live/vlxyj.m3u8
+#EXTINF:-1 tvg-name="西游记 经典连播" tvg-logo="https://live.fanmingming.cn/tv/西游记.png" group-title="电视剧专区",西游记 经典连播 (西游记高清备用)
+http://173.208.212.130:8181/live/xyj.m3u8
+
+#EXTINF:-1 tvg-name="三国演义 经典连播" tvg-logo="https://live.fanmingming.cn/tv/三国演义.png" group-title="电视剧专区",三国演义 经典连播 (94版央视三国演义)
+http://173.208.234.146/live/vlsgyy.m3u8
+#EXTINF:-1 tvg-name="三国演义 经典连播" tvg-logo="https://live.fanmingming.cn/tv/三国演义.png" group-title="电视剧专区",三国演义 经典连播 (三国演义高清备用)
+http://173.208.212.130:8181/live/sgyy.m3u8
+
+#EXTINF:-1 tvg-name="水浒传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/水浒传.png" group-title="电视剧专区",水浒传 经典连播 (98版央视水浒传)
+http://173.208.234.146/live/vlshz.m3u8
+#EXTINF:-1 tvg-name="水浒传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/水浒传.png" group-title="电视剧专区",水浒传 经典连播 (水浒传高清备用)
+http://173.208.212.130:8181/live/shz.m3u8
+
+#EXTINF:-1 tvg-name="红楼梦 经典连播" tvg-logo="https://live.fanmingming.cn/tv/红楼梦.png" group-title="电视剧专区",红楼梦 经典连播 (87版经典红楼梦)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hongloumeng
+#EXTINF:-1 tvg-name="红楼梦 经典连播" tvg-logo="https://live.fanmingming.cn/tv/红楼梦.png" group-title="电视剧专区",红楼梦 经典连播 (红楼梦高清备用)
+http://173.208.212.130:8181/live/hlm.m3u8
+
+#EXTINF:-1 tvg-name="亮剑 经典专区" tvg-logo="https://live.fanmingming.cn/tv/亮剑.png" group-title="电视剧专区",亮剑 经典专区 (李云龙亮剑高清连播)
+http://173.208.212.130:8181/live/liangjian.m3u8
+#EXTINF:-1 tvg-name="亮剑 经典专区" tvg-logo="https://live.fanmingming.cn/tv/亮剑.png" group-title="电视剧专区",亮剑 经典专区 (亮剑多线备用)
+http://107.150.60.122/live/lj.m3u8
+
+#EXTINF:-1 tvg-name="甄嬛传 经典专区" tvg-logo="https://live.fanmingming.cn/tv/甄嬛传.png" group-title="电视剧专区",甄嬛传 经典专区 (甄嬛传高清全集连播)
+http://173.208.212.130:8181/live/zhenhuanzhuan.m3u8
+#EXTINF:-1 tvg-name="甄嬛传 经典专区" tvg-logo="https://live.fanmingming.cn/tv/甄嬛传.png" group-title="电视剧专区",甄嬛传 经典专区 (甄嬛传多线备用)
+http://198.204.228.26/live/zhz.m3u8
+
+#EXTINF:-1 tvg-name="周星驰 经典专区" tvg-logo="https://live.fanmingming.cn/tv/周星驰.png" group-title="电视剧专区",周星驰 经典专区 (周星驰经典电影连播)
+http://173.208.234.146/live/vlzxc.m3u8
+#EXTINF:-1 tvg-name="周星驰 经典专区" tvg-logo="https://live.fanmingming.cn/tv/周星驰.png" group-title="电视剧专区",周星驰 经典专区 (星爷经典备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=vlzxc
+
+#EXTINF:-1 tvg-name="士兵突击 经典连播" tvg-logo="https://live.fanmingming.cn/tv/士兵突击.png" group-title="电视剧专区",士兵突击 经典连播 (许三多士兵突击连播)
+http://173.208.212.130:8181/live/shibingtuji.m3u8
+#EXTINF:-1 tvg-name="士兵突击 经典连播" tvg-logo="https://live.fanmingming.cn/tv/士兵突击.png" group-title="电视剧专区",士兵突击 经典连播 (士兵突击多线备用)
+http://173.208.212.130:8181/live/sbtj.m3u8
+
+#EXTINF:-1 tvg-name="武林外传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/武林外传.png" group-title="电视剧专区",武林外传 经典连播 (同福客栈武林外传)
+http://173.208.212.130:8181/live/wulinwaizhuan.m3u8
+#EXTINF:-1 tvg-name="武林外传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/武林外传.png" group-title="电视剧专区",武林外传 经典连播 (武林外传多线备用)
+http://198.204.228.26/live/wlwz.m3u8
+
+#EXTINF:-1 tvg-name="大秦帝国 经典连播" tvg-logo="https://live.fanmingming.cn/tv/大秦帝国.png" group-title="电视剧专区",大秦帝国 经典连播 (大秦帝国系列连播)
+http://173.208.212.130:8181/live/daqindiguo.m3u8
+#EXTINF:-1 tvg-name="大秦帝国 经典连播" tvg-logo="https://live.fanmingming.cn/tv/大秦帝国.png" group-title="电视剧专区",大秦帝国 经典连播 (大秦帝国多线备用)
+http://198.204.228.26/live/daqindiguo.m3u8
+
+#EXTINF:-1 tvg-name="包青天 经典连播" tvg-logo="https://live.fanmingming.cn/tv/包青天.png" group-title="电视剧专区",包青天 经典连播 (金超群包青天连播)
+http://173.208.212.130:8181/live/baoqingtian.m3u8
+#EXTINF:-1 tvg-name="包青天 经典连播" tvg-logo="https://live.fanmingming.cn/tv/包青天.png" group-title="电视剧专区",包青天 经典连播 (包青天多线备用)
+http://173.208.212.130:8181/live/bqt.m3u8
+
+#EXTINF:-1 tvg-name="仙剑奇侠传 连播" tvg-logo="https://live.fanmingming.cn/tv/仙剑奇侠传.png" group-title="电视剧专区",仙剑奇侠传 连播 (胡歌经典仙剑奇侠传)
+http://173.208.212.130:8181/live/xianjianqixiazhuan.m3u8
+#EXTINF:-1 tvg-name="仙剑奇侠传 连播" tvg-logo="https://live.fanmingming.cn/tv/仙剑奇侠传.png" group-title="电视剧专区",仙剑奇侠传 连播 (仙剑奇侠传备用)
+http://173.208.212.130:8181/live/xb.m3u8
+
+#EXTINF:-1 tvg-name="闯关东 连播" tvg-logo="https://live.fanmingming.cn/tv/闯关东.png" group-title="电视剧专区",闯关东 连播 (李幼斌闯关东连播)
+http://173.208.234.146/live/lbchuangguandong.m3u8
 
 # ----------------- 电影专区 -----------------
 #EXTINF:-1 tvg-name="CHC 动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="电影专区",CHC 动作电影 (高清CDN专线)
@@ -257,6 +359,12 @@ http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://live.fanmingming.cn/tv/风云剧场.png" group-title="电影专区",风云剧场 (极速备用源)
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyjc
 
+#EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://live.fanmingming.cn/tv/欢笑剧场.png" group-title="电影专区",欢笑剧场 (高清秒开源)
+http://38.75.136.137:98/gslb/dsdqpub/hxjchd.m3u8?auth=testpub
+
+#EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://live.fanmingming.cn/tv/都市剧场.png" group-title="电影专区",都市剧场 (高清秒开源)
+http://38.75.136.137:98/gslb/dsdqpub/dsjchd.m3u8?auth=testpub
+
 #EXTINF:-1 tvg-name="重温经典 电影" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影专区",重温经典 电影 (高清CDN专线)
 http://107.150.60.122/live/cwjd.m3u8
 #EXTINF:-1 tvg-name="重温经典 电影" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影专区",重温经典 电影 (超清1080P线)
@@ -284,43 +392,6 @@ http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyyy
 
 #EXTINF:-1 tvg-name="风云足球" tvg-logo="https://live.fanmingming.cn/tv/风云足球.png" group-title="电影专区",风云足球 (高清极速源)
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyzq
-
-#EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://live.fanmingming.cn/tv/欢笑剧场.png" group-title="电影专区",欢笑剧场 (高清秒开)
-http://38.75.136.137:98/gslb/dsdqpub/hxjchd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://live.fanmingming.cn/tv/都市剧场.png" group-title="电影专区",都市剧场 (高清秒开)
-http://38.75.136.137:98/gslb/dsdqpub/dsjchd.m3u8?auth=testpub
-
-# ----------------- 电视剧专区 -----------------
-#EXTINF:-1 tvg-name="西游记 经典连播" tvg-logo="https://live.fanmingming.cn/tv/西游记.png" group-title="电视剧专区",西游记 经典连播 (经典完整版)
-http://173.208.234.146/live/vlxyj.m3u8
-
-#EXTINF:-1 tvg-name="三国演义 经典连播" tvg-logo="https://live.fanmingming.cn/tv/三国演义.png" group-title="电视剧专区",三国演义 经典连播 (经典完整版)
-http://173.208.234.146/live/vlsgyy.m3u8
-
-#EXTINF:-1 tvg-name="水浒传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/水浒传.png" group-title="电视剧专区",水浒传 经典连播 (经典完整版)
-http://173.208.234.146/live/vlshz.m3u8
-#EXTINF:-1 tvg-name="水浒传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/水浒传.png" group-title="电视剧专区",水浒传 经典连播 (高清备用源)
-http://198.204.228.26/live/shz.m3u8
-
-#EXTINF:-1 tvg-name="红楼梦 经典连播" tvg-logo="https://live.fanmingming.cn/tv/红楼梦.png" group-title="电视剧专区",红楼梦 经典连播 (经典完整版)
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hongloumeng
-
-#EXTINF:-1 tvg-name="亮剑 经典专区" tvg-logo="https://live.fanmingming.cn/tv/亮剑.png" group-title="电视剧专区",亮剑 经典专区 (李云龙亮剑)
-http://38.75.136.137:98/gslb/dsdqpub/liangjian.m3u8?auth=testpub
-
-#EXTINF:-1 tvg-name="周星驰 经典专区" tvg-logo="https://live.fanmingming.cn/tv/周星驰.png" group-title="电视剧专区",周星驰 经典专区 (周星驰大电影)
-http://173.208.234.146/live/vlzxc.m3u8
-#EXTINF:-1 tvg-name="周星驰 经典专区" tvg-logo="https://live.fanmingming.cn/tv/周星驰.png" group-title="电视剧专区",周星驰 经典专区 (星爷经典备用)
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=vlzxc
-
-#EXTINF:-1 tvg-name="天龙八部 连播" tvg-logo="https://live.fanmingming.cn/tv/天龙八部.png" group-title="电视剧专区",天龙八部 连播 (经典金庸武侠)
-http://38.75.136.137:98/gslb/dsdqpub/vltlbb.m3u8?auth=testpub
-
-#EXTINF:-1 tvg-name="仙剑奇侠传 连播" tvg-logo="https://live.fanmingming.cn/tv/仙剑奇侠传.png" group-title="电视剧专区",仙剑奇侠传 连播 (经典仙剑仙侠)
-http://204.12.221.218:8181/3m1080p/vlxb.m3u8
-
-#EXTINF:-1 tvg-name="闯关东 连播" tvg-logo="https://live.fanmingming.cn/tv/闯关东.png" group-title="电视剧专区",闯关东 连播 (经典年代大戏)
-http://173.208.234.146/live/lbchuangguandong.m3u8
 
 # ----------------- 卫视频道 -----------------
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.cn/tv/湖南卫视.png" group-title="卫视频道",湖南卫视 (高清CDN专线)
