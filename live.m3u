@@ -95,6 +95,53 @@ http://107.150.60.122/live/cctv17hd.m3u8
 http://204.12.221.218:8181/3m1080p/cctv17.m3u8
 
 # ----------------- 重庆频道 -----------------
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/CQTVNewsHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (广电备用源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqxinwenHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="重庆频道",重庆新闻 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225531/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqyingshiHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆影视.png" group-title="重庆频道",重庆影视 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225633/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/CQTVkejiaoHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆科教.png" group-title="重庆频道",重庆科教 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225632/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqdushiHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="重庆频道",重庆都市 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225631/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqshehuiHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png" group-title="重庆频道",重庆社会与法 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225634/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqwentiHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225635/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqshaoerHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆少儿.png" group-title="重庆频道",重庆少儿 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225636/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png" group-title="重庆频道",重庆汽摩 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqqimoHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png" group-title="重庆频道",重庆汽摩 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225637/chunklist.m3u8
+
+#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png" group-title="重庆频道",重庆移动电视 (广电直出源)
+http://baidu.live.cqccn.com/__cl/cg:live/__c/cqyidongHD/__op/default/__f//index.m3u8
+#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png" group-title="重庆频道",重庆移动电视 (电信IPTV源)
+http://219.153.252.50/PLTV/88888888/224/3221225638/chunklist.m3u8
+
 #EXTINF:-1 tvg-name="万州综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/万州综合.png" group-title="重庆频道",万州综合 (广电官方直出)
 http://wanzhoulive.cbg.cn:8017/iTXwrGs/800/live.m3u8
 #EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="重庆频道",重庆卫视 (超清1080P线)
