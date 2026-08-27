@@ -1,0 +1,871 @@
+[
+  {
+    "category": "央视频道",
+    "channels": [
+      {
+        "id": 1,
+        "name": "CCTV-1 综合",
+        "logo": "https://live.fanmingming.cn/tv/CCTV1.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225829/index.m3u8"
+          },
+          {
+            "name": "北京移动专线",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226956/1.m3u8"
+          },
+          {
+            "name": "公网备用源1",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv1"
+          },
+          {
+            "name": "公网备用源2",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv1hd.m3u8?auth=testpub"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "CCTV-2 财经",
+        "logo": "https://live.fanmingming.cn/tv/CCTV2.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225830/index.m3u8"
+          },
+          {
+            "name": "北京移动专线",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226957/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv2"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "CCTV-3 综艺",
+        "logo": "https://live.fanmingming.cn/tv/CCTV3.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225831/index.m3u8"
+          },
+          {
+            "name": "北京移动专线",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226958/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv3"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "CCTV-4 中文国际",
+        "logo": "https://live.fanmingming.cn/tv/CCTV4.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225832/index.m3u8"
+          },
+          {
+            "name": "北京移动专线",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226959/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv4"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "CCTV-5 体育",
+        "logo": "https://live.fanmingming.cn/tv/CCTV5.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225833/index.m3u8"
+          },
+          {
+            "name": "北京移动专线",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226960/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv5"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "CCTV-5+ 体育赛事",
+        "logo": "https://live.fanmingming.cn/tv/CCTV5+.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225834/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv5p"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "CCTV-6 电影",
+        "logo": "https://live.fanmingming.cn/tv/CCTV6.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225835/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv6"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "CCTV-7 国防军事",
+        "logo": "https://live.fanmingming.cn/tv/CCTV7.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225836/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv7"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "CCTV-8 电视剧",
+        "logo": "https://live.fanmingming.cn/tv/CCTV8.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225837/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv8"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "CCTV-9 纪录",
+        "logo": "https://live.fanmingming.cn/tv/CCTV9.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225838/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv9"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "CCTV-10 科教",
+        "logo": "https://live.fanmingming.cn/tv/CCTV10.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225839/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv10"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "CCTV-11 戏曲",
+        "logo": "https://live.fanmingming.cn/tv/CCTV11.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225840/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv11"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "CCTV-12 社会与法",
+        "logo": "https://live.fanmingming.cn/tv/CCTV12.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225841/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv12"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "CCTV-13 新闻",
+        "logo": "https://live.fanmingming.cn/tv/CCTV13.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225842/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv13"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "CCTV-14 少儿",
+        "logo": "https://live.fanmingming.cn/tv/CCTV14.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225843/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv14"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "CCTV-15 音乐",
+        "logo": "https://live.fanmingming.cn/tv/CCTV15.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225844/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv15"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "CCTV-16 奥林匹克",
+        "logo": "https://live.fanmingming.cn/tv/CCTV16.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225845/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv16"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "CCTV-17 农业农村",
+        "logo": "https://live.fanmingming.cn/tv/CCTV17.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225846/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cctv17"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "CCTV-4K 超高清",
+        "logo": "https://live.fanmingming.cn/tv/CCTV4K.png",
+        "sources": [
+          {
+            "name": "IPv6 4K专线",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225848/index.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "兵器科技",
+        "logo": "https://live.fanmingming.cn/tv/兵器科技.png",
+        "sources": [
+          {
+            "name": "高清专线",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225850/index.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "name": "风云剧场",
+        "logo": "https://live.fanmingming.cn/tv/风云剧场.png",
+        "sources": [
+          {
+            "name": "高清专线",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225851/index.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "第一剧场",
+        "logo": "https://live.fanmingming.cn/tv/第一剧场.png",
+        "sources": [
+          {
+            "name": "高清专线",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225852/index.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "怀旧剧场",
+        "logo": "https://live.fanmingming.cn/tv/怀旧剧场.png",
+        "sources": [
+          {
+            "name": "高清专线",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225853/index.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "世界地理",
+        "logo": "https://live.fanmingming.cn/tv/世界地理.png",
+        "sources": [
+          {
+            "name": "高清专线",
+            "url": "http://[2409:8087:2001:20:2800:0:df6e:eb01]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225854/index.m3u8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "重庆频道",
+    "channels": [
+      {
+        "id": 101,
+        "name": "重庆卫视",
+        "logo": "https://live.fanmingming.cn/tv/重庆卫视.png",
+        "sources": [
+          {
+            "name": "IPv6高清专线",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226963/1.m3u8"
+          },
+          {
+            "name": "移动高清线",
+            "url": "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226409/index.m3u8"
+          },
+          {
+            "name": "重庆广电CDN线",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqwshd/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源1",
+            "url": "http://t.061899.xyz/tl/tl.php?id=cqws"
+          },
+          {
+            "name": "公网备用源2",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "name": "重庆新闻",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆新闻.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqxinwenHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqxw.m3u8?auth=testpub"
+          },
+          {
+            "name": "IPTV专网线",
+            "url": "http://219.153.252.50/PLTV/88888888/224/3221225630/chunklist.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "name": "重庆影视频道",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆影视.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqyingshiHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqys.m3u8?auth=testpub"
+          },
+          {
+            "name": "IPTV专网线",
+            "url": "http://219.153.252.50/PLTV/88888888/224/3221225633/chunklist.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 104,
+        "name": "重庆都市频道",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆都市.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqdushiHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqds.m3u8?auth=testpub"
+          },
+          {
+            "name": "IPTV专网线",
+            "url": "http://219.153.252.50/PLTV/88888888/224/3221225631/chunklist.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 105,
+        "name": "重庆科教频道",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆科教.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqkejiaoHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqkj.m3u8?auth=testpub"
+          },
+          {
+            "name": "IPTV专网线",
+            "url": "http://219.153.252.50/PLTV/88888888/224/3221225632/chunklist.m3u8"
+          }
+        ]
+      },
+      {
+        "id": 106,
+        "name": "重庆社会与法",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆社会与法.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqshehuiHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqsh.m3u8?auth=testpub"
+          }
+        ]
+      },
+      {
+        "id": 107,
+        "name": "重庆文体娱乐",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆文体娱乐.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqwentiHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqwt.m3u8?auth=testpub"
+          }
+        ]
+      },
+      {
+        "id": 108,
+        "name": "重庆少儿频道",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆少儿.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqshaoerHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqse.m3u8?auth=testpub"
+          }
+        ]
+      },
+      {
+        "id": 109,
+        "name": "重庆汽摩频道",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆汽摩.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqqimoHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqqm.m3u8?auth=testpub"
+          }
+        ]
+      },
+      {
+        "id": 110,
+        "name": "重庆移动电视",
+        "logo": "https://www.xn--rgv465a.top/tvlogo/重庆移动电视.png",
+        "sources": [
+          {
+            "name": "重庆广电CDN",
+            "url": "http://baidu.live.cqccn.com/__cl/cg:live/__c/cqyidongHD/__op/default/__f//index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://38.75.136.137:98/gslb/dsdqpub/cqyd.m3u8?auth=testpub"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "卫视频道",
+    "channels": [
+      {
+        "id": 201,
+        "name": "湖南卫视",
+        "logo": "https://live.fanmingming.cn/tv/湖南卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226961/1.m3u8"
+          },
+          {
+            "name": "移动高清线",
+            "url": "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226410/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=hnws"
+          }
+        ]
+      },
+      {
+        "id": 202,
+        "name": "浙江卫视",
+        "logo": "https://live.fanmingming.cn/tv/浙江卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226962/1.m3u8"
+          },
+          {
+            "name": "移动高清线",
+            "url": "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226411/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=zjws"
+          }
+        ]
+      },
+      {
+        "id": 203,
+        "name": "江苏卫视",
+        "logo": "https://live.fanmingming.cn/tv/江苏卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226964/1.m3u8"
+          },
+          {
+            "name": "移动高清线",
+            "url": "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226412/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=jsws"
+          }
+        ]
+      },
+      {
+        "id": 204,
+        "name": "东方卫视",
+        "logo": "https://live.fanmingming.cn/tv/东方卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226965/1.m3u8"
+          },
+          {
+            "name": "移动高清线",
+            "url": "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226413/index.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=dfws"
+          }
+        ]
+      },
+      {
+        "id": 205,
+        "name": "北京卫视",
+        "logo": "https://live.fanmingming.cn/tv/北京卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226966/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=bjws"
+          }
+        ]
+      },
+      {
+        "id": 206,
+        "name": "广东卫视",
+        "logo": "https://live.fanmingming.cn/tv/广东卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226967/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=gdws"
+          }
+        ]
+      },
+      {
+        "id": 207,
+        "name": "深圳卫视",
+        "logo": "https://live.fanmingming.cn/tv/深圳卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226968/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=szws"
+          }
+        ]
+      },
+      {
+        "id": 208,
+        "name": "安徽卫视",
+        "logo": "https://live.fanmingming.cn/tv/安徽卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226969/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=ahws"
+          }
+        ]
+      },
+      {
+        "id": 209,
+        "name": "山东卫视",
+        "logo": "https://live.fanmingming.cn/tv/山东卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226970/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=sdws"
+          }
+        ]
+      },
+      {
+        "id": 210,
+        "name": "四川卫视",
+        "logo": "https://live.fanmingming.cn/tv/四川卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226971/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=scws"
+          }
+        ]
+      },
+      {
+        "id": 211,
+        "name": "天津卫视",
+        "logo": "https://live.fanmingming.cn/tv/天津卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226972/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=tjws"
+          }
+        ]
+      },
+      {
+        "id": 212,
+        "name": "河南卫视",
+        "logo": "https://live.fanmingming.cn/tv/河南卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226973/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=hnws2"
+          }
+        ]
+      },
+      {
+        "id": 213,
+        "name": "湖北卫视",
+        "logo": "https://live.fanmingming.cn/tv/湖北卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226974/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=hbws"
+          }
+        ]
+      },
+      {
+        "id": 214,
+        "name": "辽宁卫视",
+        "logo": "https://live.fanmingming.cn/tv/辽宁卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226975/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=lnws"
+          }
+        ]
+      },
+      {
+        "id": 215,
+        "name": "黑龙江卫视",
+        "logo": "https://live.fanmingming.cn/tv/黑龙江卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226976/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=hljws"
+          }
+        ]
+      },
+      {
+        "id": 216,
+        "name": "江西卫视",
+        "logo": "https://live.fanmingming.cn/tv/江西卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226977/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=jxws"
+          }
+        ]
+      },
+      {
+        "id": 217,
+        "name": "河北卫视",
+        "logo": "https://live.fanmingming.cn/tv/河北卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226978/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=hebeiws"
+          }
+        ]
+      },
+      {
+        "id": 218,
+        "name": "贵州卫视",
+        "logo": "https://live.fanmingming.cn/tv/贵州卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226979/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=gzws"
+          }
+        ]
+      },
+      {
+        "id": 219,
+        "name": "陕西卫视",
+        "logo": "https://live.fanmingming.cn/tv/陕西卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226980/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=sxws"
+          }
+        ]
+      },
+      {
+        "id": 220,
+        "name": "东南卫视",
+        "logo": "https://live.fanmingming.cn/tv/东南卫视.png",
+        "sources": [
+          {
+            "name": "IPv6专线(高清)",
+            "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226981/1.m3u8"
+          },
+          {
+            "name": "公网备用源",
+            "url": "http://t.061899.xyz/tl/tl.php?id=dnws"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- 1. 全屏播放器控件 (Surface / Texture View) -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:use_controller="false"
+        app:surface_type="surface_view"
+        app:resize_mode="fit" />
+
+    <!-- 2. 加载缓冲动画与提示 -->
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_card_round"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/tvLoadingMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/tv_text_primary"
+            android:textSize="18sp"
+            android:text="@string/channel_loading" />
+    </LinearLayout>
+
+    <!-- 3. 换台/选台 OSD 悬浮信息条（换台时显示，3秒自动消失） -->
+    <LinearLayout
+        android:id="@+id/osdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="32dp"
+        android:background="@drawable/bg_card_round"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/osdChannelNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_accent"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:text="01" />
+
+            <TextView
+                android:id="@+id/osdChannelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/tv_text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="CCTV-1 综合" />
+
+            <TextView
+                android:id="@+id/osdCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_badge"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:textColor="@color/tv_text_secondary"
+                android:textSize="14sp"
+                android:text="央视频道" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/osdSourceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_accent"
+                android:textSize="15sp"
+                android:text="线路 1/3: IPv6高清专线" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/tv_text_secondary"
+                android:textSize="13sp"
+                android:text="@string/switch_source_tip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 4. 遥控器数字输入展示（输入 1, 101 等） -->
+    <TextView
+        android:id="@+id/tvDigitInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="36dp"
+        android:background="@drawable/bg_card_round"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/tv_accent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="01" />
+
+    <!-- 5. 侧边栏节目单/频道列表抽屉（按 OK 呼出） -->
+    <LinearLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="480dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/tv_bg_dark"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!-- 分类列表 (160dp) -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@color/tv_bg_panel"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:textColor="@color/tv_accent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="雀5 电视直播" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp" />
+        </LinearLayout>
+
+        <!-- 频道列表 (320dp) -->
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/tvDrawerCategoryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/tv_text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="频道列表 (24)" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvChannels"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

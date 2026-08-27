@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- TV UI Colors -->
+    <color name="tv_bg_dark">#E60F141C</color>
+    <color name="tv_bg_panel">#CC18202C</color>
+    <color name="tv_item_focused">#FF007AFF</color>
+    <color name="tv_item_focused_bg">#33007AFF</color>
+    <color name="tv_item_selected">#30FFFFFF</color>
+    <color name="tv_text_primary">#FFFFFFFF</color>
+    <color name="tv_text_secondary">#B3FFFFFF</color>
+    <color name="tv_accent">#FF00D2FF</color>
+    <color name="tv_osd_bg">#D90A0E17</color>
+    <color name="tv_badge_bg">#FF243B55</color>
+</resources>
