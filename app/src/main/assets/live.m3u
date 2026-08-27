@@ -1,7 +1,7 @@
-#EXTM3U name="雀5电视高清直播源" x-tvg-url="https://live.fanmingming.cn/e.xml"
-# ===================================================
-# 雀5高清直播源清单 (央视+重庆全套地方台+全国卫视完整版)
-# ===================================================
+#EXTM3U name="雀5电视高清直播与影视专区" x-tvg-url="https://live.fanmingming.cn/e.xml"
+# ==========================================================================
+# 雀5电视专用列表 (央视+重庆地方台全套+全国卫视+电影点播+电视剧专区)
+# ==========================================================================
 
 # ----------------- 央视频道 -----------------
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="央视频道",CCTV-1 综合 (高清CDN专线)
@@ -189,6 +189,133 @@ http://219.153.252.50/PLTV/88888888/224/3221225638/chunklist.m3u8
 
 #EXTINF:-1 tvg-name="万州三峡移民台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/万州三峡移民台.png" group-title="重庆频道",万州三峡移民台 (广电官方直连)
 http://123.146.162.24:8017/c2F0hmi/1000/live.m3u8
+
+# ----------------- 电影专区 -----------------
+#EXTINF:-1 tvg-name="CHC 动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="电影专区",CHC 动作电影 (高清CDN专线)
+http://107.150.60.122/live/chcdz.m3u8
+#EXTINF:-1 tvg-name="CHC 动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="电影专区",CHC 动作电影 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/chcdz.m3u8
+#EXTINF:-1 tvg-name="CHC 动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="电影专区",CHC 动作电影 (公网高速线)
+http://198.204.228.26/live/chcdz.m3u8
+#EXTINF:-1 tvg-name="CHC 动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="电影专区",CHC 动作电影 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="CHC 动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="电影专区",CHC 动作电影 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcdz
+
+#EXTINF:-1 tvg-name="CHC 家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="电影专区",CHC 家庭影院 (高清CDN专线)
+http://107.150.60.122/live/chcjt.m3u8
+#EXTINF:-1 tvg-name="CHC 家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="电影专区",CHC 家庭影院 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/chcjt.m3u8
+#EXTINF:-1 tvg-name="CHC 家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="电影专区",CHC 家庭影院 (公网高速线)
+http://198.204.228.26/live/chcjt.m3u8
+#EXTINF:-1 tvg-name="CHC 家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="电影专区",CHC 家庭影院 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="CHC 家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="电影专区",CHC 家庭影院 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcjt
+
+#EXTINF:-1 tvg-name="CHC 高清电影" tvg-logo="https://live.fanmingming.cn/tv/CHC高清电影.png" group-title="电影专区",CHC 高清电影 (高清CDN专线)
+http://107.150.60.122/live/chchd.m3u8
+#EXTINF:-1 tvg-name="CHC 高清电影" tvg-logo="https://live.fanmingming.cn/tv/CHC高清电影.png" group-title="电影专区",CHC 高清电影 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/chchd.m3u8
+#EXTINF:-1 tvg-name="CHC 高清电影" tvg-logo="https://live.fanmingming.cn/tv/CHC高清电影.png" group-title="电影专区",CHC 高清电影 (公网高速线)
+http://198.204.228.26/live/chchd.m3u8
+#EXTINF:-1 tvg-name="CHC 高清电影" tvg-logo="https://live.fanmingming.cn/tv/CHC高清电影.png" group-title="电影专区",CHC 高清电影 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="CHC 高清电影" tvg-logo="https://live.fanmingming.cn/tv/CHC高清电影.png" group-title="电影专区",CHC 高清电影 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chchd
+
+#EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://live.fanmingming.cn/tv/第一剧场.png" group-title="电影专区",第一剧场 (高清CDN专线)
+http://107.150.60.122/live/dyjc.m3u8
+#EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://live.fanmingming.cn/tv/第一剧场.png" group-title="电影专区",第一剧场 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/dyjc.m3u8
+#EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://live.fanmingming.cn/tv/第一剧场.png" group-title="电影专区",第一剧场 (公网高速线)
+http://198.204.228.26/live/dyjc.m3u8
+#EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://live.fanmingming.cn/tv/第一剧场.png" group-title="电影专区",第一剧场 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://live.fanmingming.cn/tv/第一剧场.png" group-title="电影专区",第一剧场 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dyjc
+
+#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://live.fanmingming.cn/tv/怀旧剧场.png" group-title="电影专区",怀旧剧场 (高清CDN专线)
+http://107.150.60.122/live/hjjc.m3u8
+#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://live.fanmingming.cn/tv/怀旧剧场.png" group-title="电影专区",怀旧剧场 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/hjjc.m3u8
+#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://live.fanmingming.cn/tv/怀旧剧场.png" group-title="电影专区",怀旧剧场 (公网高速线)
+http://198.204.228.26/live/hjjc.m3u8
+#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://live.fanmingming.cn/tv/怀旧剧场.png" group-title="电影专区",怀旧剧场 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://live.fanmingming.cn/tv/怀旧剧场.png" group-title="电影专区",怀旧剧场 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hjjc
+
+#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://live.fanmingming.cn/tv/风云剧场.png" group-title="电影专区",风云剧场 (高清CDN专线)
+http://107.150.60.122/live/fyjc.m3u8
+#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://live.fanmingming.cn/tv/风云剧场.png" group-title="电影专区",风云剧场 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/fyjc.m3u8
+#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://live.fanmingming.cn/tv/风云剧场.png" group-title="电影专区",风云剧场 (公网高速线)
+http://198.204.228.26/live/fyjc.m3u8
+#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://live.fanmingming.cn/tv/风云剧场.png" group-title="电影专区",风云剧场 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://live.fanmingming.cn/tv/风云剧场.png" group-title="电影专区",风云剧场 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyjc
+
+#EXTINF:-1 tvg-name="重温经典 电影" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影专区",重温经典 电影 (高清CDN专线)
+http://107.150.60.122/live/cwjd.m3u8
+#EXTINF:-1 tvg-name="重温经典 电影" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影专区",重温经典 电影 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/cwjd.m3u8
+#EXTINF:-1 tvg-name="重温经典 电影" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影专区",重温经典 电影 (公网高速线)
+http://198.204.228.26/live/cwjd.m3u8
+#EXTINF:-1 tvg-name="重温经典 电影" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影专区",重温经典 电影 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/cwjd.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="重温经典 电影" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影专区",重温经典 电影 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cwjd
+
+#EXTINF:-1 tvg-name="动作大片 专区" tvg-logo="https://live.fanmingming.cn/tv/动作电影.png" group-title="电影专区",动作大片 专区 (高清点播源)
+http://38.75.136.137:98/gslb/dsdqpub/dongzuody.m3u8?auth=testpub
+
+#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://live.fanmingming.cn/tv/风云音乐.png" group-title="电影专区",风云音乐 (高清CDN专线)
+http://107.150.60.122/live/fyyy.m3u8
+#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://live.fanmingming.cn/tv/风云音乐.png" group-title="电影专区",风云音乐 (超清1080P线)
+http://204.12.221.218:8181/3m1080p/fyyy.m3u8
+#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://live.fanmingming.cn/tv/风云音乐.png" group-title="电影专区",风云音乐 (公网高速线)
+http://198.204.228.26/live/fyyy.m3u8
+#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://live.fanmingming.cn/tv/风云音乐.png" group-title="电影专区",风云音乐 (多线备用源)
+http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://live.fanmingming.cn/tv/风云音乐.png" group-title="电影专区",风云音乐 (极速备用源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyyy
+
+#EXTINF:-1 tvg-name="风云足球" tvg-logo="https://live.fanmingming.cn/tv/风云足球.png" group-title="电影专区",风云足球 (高清极速源)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyzq
+
+# ----------------- 电视剧专区 -----------------
+#EXTINF:-1 tvg-name="西游记 经典连播" tvg-logo="https://live.fanmingming.cn/tv/西游记.png" group-title="电视剧专区",西游记 经典连播 (经典完整版)
+http://173.208.234.146/live/vlxyj.m3u8
+
+#EXTINF:-1 tvg-name="三国演义 经典连播" tvg-logo="https://live.fanmingming.cn/tv/三国演义.png" group-title="电视剧专区",三国演义 经典连播 (经典完整版)
+http://173.208.234.146/live/vlsgyy.m3u8
+
+#EXTINF:-1 tvg-name="水浒传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/水浒传.png" group-title="电视剧专区",水浒传 经典连播 (经典完整版)
+http://173.208.234.146/live/vlshz.m3u8
+#EXTINF:-1 tvg-name="水浒传 经典连播" tvg-logo="https://live.fanmingming.cn/tv/水浒传.png" group-title="电视剧专区",水浒传 经典连播 (高清备用源)
+http://198.204.228.26/live/shz.m3u8
+
+#EXTINF:-1 tvg-name="红楼梦 经典连播" tvg-logo="https://live.fanmingming.cn/tv/红楼梦.png" group-title="电视剧专区",红楼梦 经典连播 (经典完整版)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hongloumeng
+
+#EXTINF:-1 tvg-name="亮剑 经典专区" tvg-logo="https://live.fanmingming.cn/tv/亮剑.png" group-title="电视剧专区",亮剑 经典专区 (李云龙亮剑)
+http://38.75.136.137:98/gslb/dsdqpub/liangjian.m3u8?auth=testpub
+
+#EXTINF:-1 tvg-name="周星驰 经典专区" tvg-logo="https://live.fanmingming.cn/tv/周星驰.png" group-title="电视剧专区",周星驰 经典专区 (周星驰大电影)
+http://173.208.234.146/live/vlzxc.m3u8
+#EXTINF:-1 tvg-name="周星驰 经典专区" tvg-logo="https://live.fanmingming.cn/tv/周星驰.png" group-title="电视剧专区",周星驰 经典专区 (星爷经典备用)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=vlzxc
+
+#EXTINF:-1 tvg-name="天龙八部 连播" tvg-logo="https://live.fanmingming.cn/tv/天龙八部.png" group-title="电视剧专区",天龙八部 连播 (经典金庸武侠)
+http://38.75.136.137:98/gslb/dsdqpub/vltlbb.m3u8?auth=testpub
+
+#EXTINF:-1 tvg-name="仙剑奇侠传 连播" tvg-logo="https://live.fanmingming.cn/tv/仙剑奇侠传.png" group-title="电视剧专区",仙剑奇侠传 连播 (经典仙剑仙侠)
+http://204.12.221.218:8181/3m1080p/vlxb.m3u8
+
+#EXTINF:-1 tvg-name="闯关东 连播" tvg-logo="https://live.fanmingming.cn/tv/闯关东.png" group-title="电视剧专区",闯关东 连播 (经典年代大戏)
+http://173.208.234.146/live/lbchuangguandong.m3u8
 
 # ----------------- 卫视频道 -----------------
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.cn/tv/湖南卫视.png" group-title="卫视频道",湖南卫视 (高清CDN专线)
